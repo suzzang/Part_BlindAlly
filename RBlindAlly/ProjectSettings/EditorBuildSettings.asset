@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Scenes/RBlindAlly.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/Library.unity
+    guid: 2393f4187ebd4a440ae75349e8effd04
+  - enabled: 0
+    path: Assets/Scenes/LibraryR.unity
+    guid: bcd2e7b2b27f3dc45a07b8b007e09f8b
+  - enabled: 1
+    path: Assets/Scenes/LibraryRR.unity
+    guid: 3c54c9cbf849b554298aaa81fc260ec9
   m_configObjects: {}
