@@ -8,7 +8,7 @@ public class Library_box_Tracking : MonoBehaviour, ITrackableEventHandler
 
 
     private TrackableBehaviour mTrackableBehaviour;
-    public bool is_detected_ = false;
+    public bool is_detected_l = false;
    // public ControlBox bas;
     public int grass = 0;
     //public GameObject box;
@@ -29,14 +29,14 @@ public class Library_box_Tracking : MonoBehaviour, ITrackableEventHandler
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED)
         {
 
-            is_detected_ = true;
+            is_detected_l = true;
             Debug.Log("true");
     
 
         }
         else
         {
-            is_detected_ = false;
+            is_detected_l = false;
             Debug.Log("false");
         }
     }

@@ -30,14 +30,13 @@ public class Moving : MonoBehaviour {
 
             }
         }
-        else
-        {
+       
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.transform.name == "Cube")
+                if (hit.transform.name == "Cube1")
                 {
                     Debug.Log(hit.transform.name);
 
@@ -65,7 +64,7 @@ public class Moving : MonoBehaviour {
 
             }
 
-        }
+        
 
      
 

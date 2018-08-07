@@ -4,18 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ControlBox : MonoBehaviour {
-    public bool is_appear = true;
     public Text Clicktext;
+    public RawImage GetImage;
 
     // Use this for initialization
     void Start()
     {
+        GetImage.gameObject.SetActive(false);
 
     }
 
     // Update is called once per frame
     void Update()
     {
+ 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
@@ -25,14 +27,17 @@ public class ControlBox : MonoBehaviour {
             {
 
                 Destroy(hit.transform.gameObject);        //물체 사라짐
-                is_appear = false;
+                
+                GetImage.gameObject.SetActive(true);
+                Clicktext.text = " ";
+                Destroy(GetImage.gameObject,2.0f);
+
+
+
+
+
 
             }
-        }
-
-        if (!is_appear)
-        {
-            Clicktext.text = " ";
         }
 
     }

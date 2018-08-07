@@ -26,7 +26,7 @@ public class Library_CtrlBox : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (lbt.is_detected_)
+        if (lbt.is_detected_l)
         {
             grass.gameObject.SetActive(true);
         }else
@@ -35,7 +35,7 @@ public class Library_CtrlBox : MonoBehaviour {
             box.gameObject.SetActive(false);
         }
 
-        if (lbt.grass>100)
+        if (lbt.grass>70)
         {
             a1.gameObject.SetActive(false);
             a2.gameObject.SetActive(false);
