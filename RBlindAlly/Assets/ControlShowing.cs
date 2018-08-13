@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ControlShowing : MonoBehaviour
 {
-    public BoxTracking bt;
+    public BoxTracking_bl bt;
     public Text Clicktext;
    
     // Use this for initialization

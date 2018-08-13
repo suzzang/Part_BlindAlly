@@ -56,6 +56,7 @@ public class EndingCharacter : MonoBehaviour {
         {
             dialog.gameObject.SetActive(false);
             message.gameObject.SetActive(false);
+
             message2.gameObject.SetActive(true);
 
             docamera.gameObject.SetActive(true);
